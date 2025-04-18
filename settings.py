@@ -6,5 +6,5 @@ class Settings(BaseSettings):
     SMTP_PORT: int = 465
     SMTP_HOST: str = "smtp.yandex.ru"
     SMTP_PASSWORD: str = "hltcizdaxcqbluuu"
-    BROKER_URL: str = "127.0.0.1:9092"
+    BROKER_URL: str = "127.0.0.1:9093"
     EMAIL_CALLBACK_TOPIC: str = "callback_email_topic"

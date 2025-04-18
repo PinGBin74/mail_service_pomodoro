@@ -14,8 +14,7 @@ class MailClient:
         msg = self._build_message(subject, text, to)
         self._send_email(msg=msg)
 
-    def _build_message(self, subject: str,
-                       text: str, to: str) -> MIMEMultipart:
+    def _build_message(self, subject: str, text: str, to: str) -> MIMEMultipart:
         msg = MIMEMultipart()
 
         msg["From"] = self.settings.from_email
